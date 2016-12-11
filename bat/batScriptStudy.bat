@@ -50,17 +50,17 @@ pause
 start copytest.exe src.txt des.txt
 
 @echo (10) Cmd pushed and popd.
-::Create folder temp, current path is test.
+::Create folder temp, current path is bat.
 md temp
-::Create test.txt in temp, current path is test.
+::Create test.txt in temp, current path is bat.
 @echo hello world! >temp\test.txt
 ::Then path is temp.
 cd temp
-::Save the path of temp, and go to test use cmd pushd.
+::Save the path of temp, and go to bat use cmd pushd.
 pushd ..
 ::Go to path of saved temp.
 popd
-::Out to test and del temp.
+::Out to bat and del temp.
 pause
 del *.* /q
 cd ..
