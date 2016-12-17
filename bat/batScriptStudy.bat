@@ -9,7 +9,7 @@ title batScriptStudy
 
 @echo (3) Color setting 
 ::the first num is the backgroud color, and the second is the txt color.
-color 05
+::color 05
 
 @echo (4) Delayedexpansios
 ::disable delayedexpansios
@@ -44,7 +44,7 @@ rem end of operator ^||, once one cmd work, all others behind that will never wo
 ::Style 1.
 pause
 ::Style 2.
-@echo Pause after your cmd &pause > nul
+@echo Pause after your cmd.
 
 @echo (9) Cmd start
 start copytest.exe src.txt des.txt
@@ -69,7 +69,7 @@ if exist temp rd temp
 @echo (11) Folder created and del.
 if not exist code md code
 cd code
-md include,source,common &pause>nul
+md include,source,common
 dir
 if not exist include md include
 if not exist source md source
@@ -86,9 +86,27 @@ echo ;hello world! >temp.txt
 echo 1a 2a  3a 8a 4a 5a >>temp.txt
 echo 3b 4b  7b 6b 6b 6b >>temp.txt
 echo 7c 8c 15c 9c 9c 8c >>temp.txt
-for /F "eol=;tokens=1,2,3 delims=+= " %%i in (temp.txt) do echo %%i %%j %%k &pause>nul
+for /F "eol=;tokens=1,2,3 delims=+= " %%i in (temp.txt) do echo %%i %%j %%k
 del temp.txt
 
+
+@echo (13) Variables.
+set  windir=%windir%   
+echo windir=%windir%
+set  ComSpec=%ComSpec%          
+echo ComSpec=%ComSpec%
+set  FP_NO_HOST_CHECK=%FP_NO_HOST_CHECK%
+echo FP_NO_HOST_CHECK=%FP_NO_HOST_CHECK%
+set  Path=%Path%    
+echo Path=%Path%
+set  OS=%OS% 			  
+echo OS=%OS%
+set  allusersprofile=%allusersprofile% 			  
+echo allusersprofile=%allusersprofile%
+set  Mytest=%THISISATEST% 			  
+echo Mytest=%Mytest%
+set time=%TIME%
+echo It is %time% now.
 pause
 
 ::This  is a cmd flag.
