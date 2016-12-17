@@ -1,5 +1,5 @@
-#include "functions.h"
-#include "common.h"
+#include "..\include\functions.h"
+#include "..\common\common.h"
 #include <stdlib.h>
 
 //////////////////////////////////////////////////////////

@@ -1,5 +1,5 @@
-#include "testcase.h"
-#include "functions.h"
+#include "..\include\testcase.h"
+#include "..\include\functions.h"
 #include <stdio.h>
 
 ////////////////////////////////////////////////////////////

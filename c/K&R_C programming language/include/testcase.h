@@ -1,8 +1,8 @@
 #ifndef __TESTCASE_H_201611131802
 #define __TESTCASE_H_201611131802
 
-#include "basetype.h"
-#include "common.h"
+#include "..\common\basetype.h"
+#include "..\common\common.h"
 #include <assert.h>
 
 #ifdef __cplusplus

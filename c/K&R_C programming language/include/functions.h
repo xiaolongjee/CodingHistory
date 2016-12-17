@@ -1,7 +1,7 @@
 #ifndef _FUNCTIONS_H_201611172232
 #define _FUNCTIONS_H_201611172232
 
-#include "basetype.h"
+#include "..\common\basetype.h"
 
 #ifdef __cplusplus
 extern "C"

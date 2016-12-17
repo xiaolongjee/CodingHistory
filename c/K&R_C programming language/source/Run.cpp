@@ -1,4 +1,4 @@
-#include "testcase.h"
+#include "..\include\testcase.h"
 #include <stdlib.h>
 
 int main()
