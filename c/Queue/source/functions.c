@@ -21,8 +21,9 @@ int main()
 	maomao.gender = MALE;
 	maomao.telephonev = ""+86-88888888888;
 	maomao.email = "maomao@mm.com";
-
-	Que_Put_Head(&gFriends, maomao.linker);
+	
+	memcpy(&tContact[location], &maomao, sizeof(T_Contact));
+	Que_Put_Head(&gFriends, tContact[location].linker);
 
 	return 1;
 }
